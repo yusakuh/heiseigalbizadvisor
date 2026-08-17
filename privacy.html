@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>るるか Biz プライバシーポリシー</title>
+<style>
+  :root {
+    --paper: #eef0ea;
+    --ink: #1e2b27;
+    --ink-soft: #4b5750;
+    --ink-faint: #7c8880;
+    --rule: #c9d0c4;
+    --rule-strong: #a9b3a1;
+    --accent: #9c5f2e;
+    --accent-soft: #e7d9c7;
+    --link: #7a4a24;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #141f1b;
+      --ink: #e9efe8;
+      --ink-soft: #a8b5ac;
+      --ink-faint: #71807a;
+      --rule: #2b3a34;
+      --rule-strong: #3a4b43;
+      --accent: #d89a5d;
+      --accent-soft: #3a2f22;
+      --link: #e6b581;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 37px,
+      var(--rule) 37px,
+      var(--rule) 38px
+    );
+    color: var(--ink);
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Meiryo", sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sheet { max-width: 700px; margin: 0 auto; padding: 76px 32px 96px; }
+
+  header.doc-head { margin-bottom: 56px; }
+
+  .mark {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+    font-size: 15px;
+    letter-spacing: 0.28em;
+    color: var(--accent);
+    margin: 0 0 22px;
+  }
+
+  h1 {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+    font-weight: 600;
+    font-size: clamp(28px, 5vw, 38px);
+    line-height: 1.4;
+    margin: 0 0 18px;
+    text-wrap: balance;
+  }
+
+  .meta {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    border-top: 1px solid var(--rule-strong);
+    padding-top: 16px;
+    margin: 0;
+  }
+  .meta dt { display: inline; letter-spacing: 0.05em; }
+  .meta dd { display: inline; margin: 0 0 0 8px; color: var(--ink-soft); }
+
+  .lede { color: var(--ink-soft); font-size: 15px; max-width: 58ch; margin: 24px 0 0; }
+
+  section.article { padding: 30px 0; border-top: 1px solid var(--rule); }
+  section.article:first-of-type { border-top: 1px solid var(--rule-strong); }
+
+  .article-head { display: flex; align-items: baseline; gap: 14px; margin: 0 0 14px; }
+
+  .article-no {
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 13px;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 3px 9px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+
+  .article-title { font-size: 18px; font-weight: 600; margin: 0; text-wrap: balance; }
+
+  .article p { margin: 0 0 12px; max-width: 62ch; color: var(--ink); }
+  .article p:last-child { margin-bottom: 0; }
+
+  .article ol, .article ul { margin: 0 0 12px; padding-left: 1.4em; max-width: 60ch; color: var(--ink); }
+  .article li { margin: 0 0 6px; }
+  .article li:last-child { margin-bottom: 0; }
+
+  table.data-table { width: 100%; max-width: 62ch; border-collapse: collapse; margin: 0 0 12px; font-size: 14px; }
+  table.data-table th, table.data-table td { text-align: left; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  table.data-table th { color: var(--ink-faint); font-weight: 600; letter-spacing: 0.03em; font-size: 12px; text-transform: uppercase; }
+  .table-wrap { overflow-x: auto; }
+
+  .article a { color: var(--link); text-decoration-color: var(--rule-strong); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  footer.doc-foot {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule-strong);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--ink-faint);
+  }
+  footer.doc-foot strong { color: var(--ink-soft); font-weight: 600; }
+
+  @media (max-width: 520px) {
+    .sheet { padding: 48px 20px 72px; }
+    .meta { flex-direction: column; gap: 6px; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="doc-head">
+    <p class="mark">るるか BIZ</p>
+    <h1>プライバシーポリシー</h1>
+    <dl class="meta">
+      <div><dt>制定日</dt><dd>2026年8月17日</dd></div>
+      <div><dt>運営者</dt><dd>るるか Biz（個人事業）</dd></div>
+    </dl>
+    <p class="lede">
+      るるか Biz（以下「当方」）は、AIキャラクター「るるか」による経営・ビジネス系ショート動画の
+      自動生成・自動投稿ツール（以下「本サービス」）における情報の取り扱いについて、本ポリシーを定めます。
+    </p>
+  </header>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">第1条</span><h2 class="article-title">本サービスの性質</h2></div>
+    <p>本サービスは、当方自身が運営するYouTube・TikTok・Instagramアカウントへ、当方が生成した動画を自動投稿するための内部ツールです。不特定多数の利用者にアカウントを開放する公開Webサービスではなく、第三者から個人情報の入力を受け付ける機能もありません。</p>
+  </section>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">第2条</span><h2 class="article-title">取得する情報</h2></div>
+    <p>本サービスは、次の情報を取得・保持します。</p>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th>情報</th><th>取得元</th><th>用途</th></tr></thead>
+        <tbody>
+          <tr><td>OAuthアクセストークン・リフレッシュトークン</td><td>YouTube / TikTok / Instagram の各公式認可フロー</td><td>当方自身のアカウントへの動画投稿</td></tr>
+          <tr><td>投稿動画の再生数・エンゲージメント等の統計</td><td>各プラットフォームの公式API</td><td>投稿内容の分析・改善</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>本サービスは不特定多数の一般ユーザーを対象としたログイン機能を持たないため、当方自身のアカウント情報以外の個人情報は取得しません。</p>
+  </section>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">第3条</span><h2 class="article-title">情報の保管</h2></div>
+    <p>取得したトークン等は、当方が管理するローカル環境の設定ファイルに保存し、外部のサーバーやデータベースへは送信・保存しません。</p>
+  </section>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">第4条</span><h2 class="article-title">第三者提供</h2></div>
+    <p>当方は、法令に基づく場合を除き、取得した情報を第三者に提供しません。各プラットフォームへの投稿は、当該プラットフォームが公式に提供するAPIの利用規約に従って行われます。</p>
+  </section>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">第5条</span><h2 class="article-title">アクセス権の取り消し</h2></div>
+    <p>各プラットフォームの連携アカウント設定画面から、いつでも本サービスへのアクセス権限を取り消すことができます（例: YouTube／Googleアカウントの「サードパーティ アクセス」設定、TikTokアプリの「管理しているアプリとデバイス」設定等）。</p>
+  </section>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">第6条</span><h2 class="article-title">ポリシーの改定</h2></div>
+    <p>当方は、必要と判断した場合には、事前の通知なく本ポリシーを改定できるものとします。改定後のポリシーは、本ページに掲載した時点から効力を生じます。</p>
+  </section>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">第7条</span><h2 class="article-title">お問い合わせ</h2></div>
+    <p>本ポリシー又は情報の取り扱いに関するお問い合わせは、下記連絡先までお願いいたします。</p>
+  </section>
+
+  <footer class="doc-foot">
+    <span><strong>るるか Biz</strong> — 運営者: 個人事業</span>
+    <span>connect: yusaku.jojo777+airuruka@gmail.com</span>
+  </footer>
+</div>
+</body>
+</html>

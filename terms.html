@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>るるか Biz 利用規約</title>
+<style>
+  :root {
+    --paper: #eef0ea;
+    --ink: #1e2b27;
+    --ink-soft: #4b5750;
+    --ink-faint: #7c8880;
+    --rule: #c9d0c4;
+    --rule-strong: #a9b3a1;
+    --accent: #9c5f2e;
+    --accent-soft: #e7d9c7;
+    --link: #7a4a24;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #141f1b;
+      --ink: #e9efe8;
+      --ink-soft: #a8b5ac;
+      --ink-faint: #71807a;
+      --rule: #2b3a34;
+      --rule-strong: #3a4b43;
+      --accent: #d89a5d;
+      --accent-soft: #3a2f22;
+      --link: #e6b581;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 37px,
+      var(--rule) 37px,
+      var(--rule) 38px
+    );
+    color: var(--ink);
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Meiryo", sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sheet {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 76px 32px 96px;
+  }
+
+  header.doc-head {
+    margin-bottom: 56px;
+  }
+
+  .mark {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+    font-size: 15px;
+    letter-spacing: 0.28em;
+    color: var(--accent);
+    margin: 0 0 22px;
+  }
+
+  h1 {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+    font-weight: 600;
+    font-size: clamp(28px, 5vw, 38px);
+    line-height: 1.4;
+    margin: 0 0 18px;
+    text-wrap: balance;
+  }
+
+  .meta {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    border-top: 1px solid var(--rule-strong);
+    padding-top: 16px;
+    margin: 0;
+  }
+
+  .meta dt { display: inline; letter-spacing: 0.05em; }
+  .meta dd { display: inline; margin: 0 0 0 8px; color: var(--ink-soft); }
+
+  .lede {
+    color: var(--ink-soft);
+    font-size: 15px;
+    max-width: 58ch;
+    margin: 24px 0 0;
+  }
+
+  section.article {
+    padding: 30px 0;
+    border-top: 1px solid var(--rule);
+  }
+  section.article:first-of-type { border-top: 1px solid var(--rule-strong); }
+
+  .article-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin: 0 0 14px;
+  }
+
+  .article-no {
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 13px;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 3px 9px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+
+  .article-title { font-size: 18px; font-weight: 600; margin: 0; text-wrap: balance; }
+
+  .article p { margin: 0 0 12px; max-width: 62ch; color: var(--ink); }
+  .article p:last-child { margin-bottom: 0; }
+
+  .article ol, .article ul { margin: 0 0 12px; padding-left: 1.4em; max-width: 60ch; color: var(--ink); }
+  .article li { margin: 0 0 6px; }
+  .article li:last-child { margin-bottom: 0; }
+
+  .article a { color: var(--link); text-decoration-color: var(--rule-strong); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  footer.doc-foot {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule-strong);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--ink-faint);
+  }
+  footer.doc-foot strong { color: var(--ink-soft); font-weight: 600; }
+
+  @media (max-width: 520px) {
+    .sheet { padding: 48px 20px 72px; }
+    .meta { flex-direction: column; gap: 6px; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="doc-head">
+    <p class="mark">るるか BIZ</p>
+    <h1>利用規約</h1>
+    <dl class="meta">
+      <div><dt>制定日</dt><dd>2026年8月17日</dd></div>
+      <div><dt>運営者</dt><dd>るるか Biz（個人事業）</dd></div>
+    </dl>
+    <p class="lede">
+      本規約は、るるか Biz（以下「当方」）が提供する、AIキャラクター「るるか」による
+      経営・ビジネス系ショート動画の自動生成・自動投稿ツール（以下「本サービス」）の
+      利用条件を定めるものです。
+    </p>
+  </header>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">第1条</span><h2 class="article-title">適用</h2></div>
+    <p>本規約は、本サービスの利用に関わる一切の関係に適用されます。当方が本サービスに関して別途定めるガイドライン等がある場合、それらは本規約の一部を構成します。</p>
+  </section>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">第2条</span><h2 class="article-title">サービス内容</h2></div>
+    <p>本サービスは、次の機能から構成されます。</p>
+    <ul>
+      <li>台本・テーマからのショート動画の自動生成</li>
+      <li>YouTube Data API・TikTok Content Posting API・Instagram Graph API等、各プラットフォームが公式に提供するAPIを通じた、運営者自身が管理するアカウントへの動画の自動投稿</li>
+      <li>投稿後の再生数・エンゲージメント等の分析</li>
+    </ul>
+    <p>本サービスは、当方自身が運営するアカウントへの投稿を目的とした内部ツールであり、第三者のアカウントを操作するものではありません。</p>
+  </section>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">第3条</span><h2 class="article-title">禁止事項</h2></div>
+    <p>本サービスの利用にあたり、次の行為を禁止します。</p>
+    <ol>
+      <li>法令又は公序良俗に違反する行為</li>
+      <li>各プラットフォーム（YouTube・TikTok・Instagram等）の利用規約・コミュニティガイドラインに違反する行為</li>
+      <li>本サービスのソースコード・仕組みを不正に解析・改変し、第三者のアカウントに対して利用する行為</li>
+      <li>当方又は第三者の権利・利益を侵害する行為</li>
+    </ol>
+  </section>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">第4条</span><h2 class="article-title">知的財産権</h2></div>
+    <p>本サービスにより生成される動画・台本・キャラクター「るるか」に関する権利は当方に帰属します。本サービスの実装（ソースコード）に関する権利も同様に当方に帰属します。</p>
+  </section>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">第5条</span><h2 class="article-title">免責事項</h2></div>
+    <p>当方は、本サービスに事実上又は法律上の瑕疵がないことを保証するものではありません。各プラットフォームのAPI仕様変更・審査結果・障害等により、本サービスの一部又は全部が予告なく変更・停止される場合があります。</p>
+    <p>本サービスの利用によって利用者に生じた損害について、当方は、当方の故意又は重過失による場合を除き、責任を負いません。</p>
+  </section>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">第6条</span><h2 class="article-title">規約の変更</h2></div>
+    <p>当方は、必要と判断した場合には、利用者への事前の通知なく本規約を変更できるものとします。変更後の規約は、本ページに掲載した時点から効力を生じます。</p>
+  </section>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">第7条</span><h2 class="article-title">準拠法・裁判管轄</h2></div>
+    <p>本規約の解釈にあたっては日本法を準拠法とします。本サービスに関して紛争が生じた場合には、当方の所在地を管轄する裁判所を第一審の専属的合意管轄裁判所とします。</p>
+  </section>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">第8条</span><h2 class="article-title">お問い合わせ</h2></div>
+    <p>本規約に関するお問い合わせは、下記連絡先までお願いいたします。</p>
+  </section>
+
+  <footer class="doc-foot">
+    <span><strong>るるか Biz</strong> — 運営者: 個人事業</span>
+    <span>connect: yusaku.jojo777+airuruka@gmail.com</span>
+  </footer>
+</div>
+</body>
+</html>
