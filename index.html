@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heisei Gal Biz Advisor</title>
+<style>
+  :root {
+    --paper: #eef0ea;
+    --ink: #1e2b27;
+    --ink-soft: #4b5750;
+    --ink-faint: #7c8880;
+    --rule: #c9d0c4;
+    --rule-strong: #a9b3a1;
+    --accent: #9c5f2e;
+    --accent-soft: #e7d9c7;
+    --link: #7a4a24;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #141f1b;
+      --ink: #e9efe8;
+      --ink-soft: #a8b5ac;
+      --ink-faint: #71807a;
+      --rule: #2b3a34;
+      --rule-strong: #3a4b43;
+      --accent: #d89a5d;
+      --accent-soft: #3a2f22;
+      --link: #e6b581;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 37px,
+      var(--rule) 37px,
+      var(--rule) 38px
+    );
+    color: var(--ink);
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Meiryo", sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sheet {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 76px 32px 96px;
+  }
+
+  header.doc-head {
+    margin-bottom: 56px;
+  }
+
+  .mark {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+    font-size: 15px;
+    letter-spacing: 0.28em;
+    color: var(--accent);
+    margin: 0 0 22px;
+  }
+
+  h1 {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+    font-weight: 600;
+    font-size: clamp(28px, 5vw, 38px);
+    line-height: 1.4;
+    margin: 0 0 18px;
+    text-wrap: balance;
+  }
+
+  .lede {
+    color: var(--ink-soft);
+    font-size: 15px;
+    max-width: 58ch;
+    margin: 24px 0 0;
+  }
+
+  section.article {
+    padding: 30px 0;
+    border-top: 1px solid var(--rule);
+  }
+  section.article:first-of-type { border-top: 1px solid var(--rule-strong); }
+
+  .article-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin: 0 0 14px;
+  }
+
+  .article-no {
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 13px;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 3px 9px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+
+  .article-title { font-size: 18px; font-weight: 600; margin: 0; text-wrap: balance; }
+
+  .article p { margin: 0 0 12px; max-width: 62ch; color: var(--ink); }
+  .article p:last-child { margin-bottom: 0; }
+
+  .links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .links a {
+    color: var(--link);
+    text-decoration-color: var(--rule-strong);
+    text-underline-offset: 3px;
+    font-size: 15px;
+  }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  footer.doc-foot {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule-strong);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--ink-faint);
+  }
+  footer.doc-foot strong { color: var(--ink-soft); font-weight: 600; }
+
+  @media (max-width: 520px) {
+    .sheet { padding: 48px 20px 72px; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="doc-head">
+    <p class="mark">HEISEI GAL BIZ ADVISOR</p>
+    <h1>Heisei Gal Biz Advisor</h1>
+    <p class="lede">
+      AIキャラクターが経営・ビジネスの知見をショート動画で届ける自動化プロジェクト。
+      台本生成から動画合成、YouTube Shorts・TikTok・Instagram Reelsへの投稿までを自動で行う。
+    </p>
+  </header>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">ABOUT</span><h2 class="article-title">このサイトについて</h2></div>
+    <p>本サイトは、Heisei Gal Biz Advisorが提供するショート動画自動生成・自動投稿ツールの利用規約・プライバシーポリシーを掲載する公式ページです。</p>
+  </section>
+
+  <section class="article">
+    <div class="article-head"><span class="article-no">LINKS</span><h2 class="article-title">リンク</h2></div>
+    <ul class="links">
+      <li><a href="./terms.html">利用規約</a></li>
+      <li><a href="./privacy.html">プライバシーポリシー</a></li>
+    </ul>
+  </section>
+
+  <footer class="doc-foot">
+    <span><strong>Heisei Gal Biz Advisor</strong> — 運営者: 個人事業</span>
+    <span>connect: yusaku.jojo777+heiseigalbizadvisor@gmail.com</span>
+  </footer>
+</div>
+</body>
+</html>
